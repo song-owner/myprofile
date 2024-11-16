@@ -46,11 +46,12 @@ class MyApp extends StatelessWidget {
                         },
                         child: Image.asset(
                           "assets/013.BMP",
-                          height: 100,
+                          height: 30,
                         )),
                     SizedBox(
                       height: 20,
                     ),
+                    Text("Emily Shinbuya"),
                     Text("Emily Shinbuya"),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -88,6 +89,28 @@ class MyApp extends StatelessWidget {
                             child: Icon(Icons.public))
                       ],
                     ),
+                    Stack(
+                      children: [
+                        Image.asset(
+                          "assets/013.BMP",
+                          height: 300,
+                        ),
+                        Positioned(
+                          left: 0,
+                          top: 00,
+                          child: TextButton(
+                            onPressed: () {
+                              print('Button 1 pressed');
+                            },
+                            child: Container(
+                              width: 300,
+                              height: 300,
+                              color: Colors.red,
+                            ),
+                          ),
+                        )
+                      ],
+                    )
                   ],
                 ))));
   }
